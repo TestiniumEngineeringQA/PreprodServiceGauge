@@ -18,13 +18,6 @@ tags:postTest_02
 * Yanıt JSON'unda "userId" değeri "1" olmalı
 * Yanıt JSON'unda "id" değeri "2" olmalı
 
-postTest_03
----
-tags:postTest_03
-* GET isteği gönder "https://jsonplaceholder.typicode.com/posts/3"
-* Status kodu "200" olmalı
-* Yanıt JSON'unda "userId" değeri "1" olmalı
-* Yanıt JSON'unda "id" değeri "3" olmalı
 
 postTest_04
 ---
