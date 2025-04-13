@@ -61,6 +61,14 @@ public class StepImplementation {
         System.out.println("JSON: " + responses.getBody());
         assertEquals(expectedValue, actual);
     }
+    @Step("Bekleme yapılacak süre: <seconds> saniye")
+    public void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);  // Bekleme süresi saniye cinsinden
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Step("Yanıt JSON'unda <key> değeri <expectedValue> sayı olarak olmalı")
     public void verifyJsonNumericValue(String key, int expectedValue) {
