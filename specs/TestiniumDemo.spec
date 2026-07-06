@@ -153,4 +153,21 @@ tags:postTest_Wait
 * Yanıt JSON'unda "userId" değeri "2" olmalı
 * Yanıt JSON'unda "id" değeri "15" olmalı
 
+NsogrContractEntry
+---
+tags:NsogrContractEntry
+* GET isteği gönder "https://jsonplaceholder.typicode.com/posts/1"
+* Status kodu "200" olmalı
+* Bekleme yapılacak süre: "1" saniye
+* Yanıt JSON'unda "userId" değeri "1" olmalı
+* Yanıt JSON'unda "id" değeri "1" olmalı
 
+
+NsogrContractExit
+---
+tags:NsogrContractExit
+* GET isteği gönder "https://jsonplaceholder.typicode.com/posts/1"
+* Status kodu "200" olmalı
+* Bekleme yapılacak süre: "1" saniye
+* Yanıt JSON'unda "userId" değeri "1" olmalı
+* Yanıt JSON'unda "id" değeri "1" olmalı
